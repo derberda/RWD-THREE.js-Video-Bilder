@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="./imports/assets/css/index.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+            rel="stylesheet">
+
+    </head>
+    <body>
+
+        <div id="webgl"></div>
+
+        <canvas id="myCanvas"></canvas>
+
+        <div id="overlay">
+            <div class="card">
+                <div class="close">+</div>
+                <div><p class="text">Button</p></div>
+                <div><p class="info">Der Button dient als Interaktion zwischen
+                        den Handschuhen. Durch einen Druck werden Daten zwischen
+                        den Geräten versendet und somit der Farbwechsel
+                        ausgelöst.</p></div>
+            </div>
+        </div>
+
+        <div id="overlay1">
+            <div class="card">
+                <div class="close">+</div>
+                <p class="text">LED</p>
+                <p class="info">Es werden insgesamt 32 LEDs angesteuert, die
+                    über den Colorpicker eine Grundfarbe annehmen und mit jeder
+                    weiteren Interaktion um die Farbe des anderen Handschuhs
+                    erweitert werden.</p>
+            </div>
+        </div>
+
+        <div id="overlay2">
+            <div class="card">
+                <div class="close">+</div>
+                <p class="text">Raspberry PI</p>
+                <p class="info">Dieser Mini-PC ist das Herzstück des Handschuhs.
+                    Hier laufen alle Prozesse zur Auswertung zusammen. Die
+                    Kommunikation der PCs spiegelt sich im Farbwechsel der LEDs
+                    wieder.</p>
+            </div>
+        </div>
+
+        <div id="overlay3">
+            <div class="card">
+                <div class="close">+</div>
+                <div><p class="text">Powerbank</p></div>
+                <div><p class="info">Die komplette Stromversorgung läuft über
+                        die austauschbare Powerbank und macht den Handschuh mit
+                        einer Laufzeit von ca. 10 Stunden zu dem perfekten
+                        Accessoire für eine Partynacht.</p></div>
+            </div>
+        </div>
+
+        <script src="imports/assets/js/WebGL.js"></script>
+        <script
+            src="imports/assets/js/dat.gui.min.js"></script>
+        <script
+            src="imports/assets/js/three.min.js"></script>
+        <script
+            src="imports/assets/js/OrbitControls.js"></script>
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script
+            src="imports/assets/js/threex.domevents.js"></script>
+        <script
+            src="imports/assets/js/MTLLoader.js"></script>
+        <script
+            src="imports/assets/js/OBJLoader.js"></script>
+        <script src="imports/assets/js/stats.min.js"></script>
+        <script type="x-shader/x-vertex" id="vertexShader">
+  
+</script>
+        <script src="./imports/assets/js/index.js"></script>
+
+    </body>
+</html>
